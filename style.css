@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Unbounded', sans-serif;
+    background-image: url('/photo/sky.jpg'); /* Replace with the correct path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    min-height: 100vh;
+    display: flex;         /* Enable Flexbox */
+    flex-direction: column;  /* Stack elements vertically */
+    align-items: center;     /* Horizontally center all content in body */
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 100;
+    text-align: right;
+}
+
+.navigation {
+    display: inline-block;
+    text-align: right;
+    padding-right: 50px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: clamp(0.625em, 1vw, 1.25em);
+}
+
+/* Content 1 Styles */
+.content-1 {
+    position: relative;
+    text-align: center;
+    padding: 50px 20px;
+    min-height: 100vh;
+    display: flex;          /* Use flexbox to center content vertically and horizontally */
+    flex-direction: column;
+    justify-content: center; /* Vertically center all elements in content-1 */
+    align-items: center;     /* Horizontally center all elements in content-1 */
+}
+
+.artist-name {
+    position: relative; /* Changed to relative to respect flexbox layout */
+    font-size: clamp(2em, 4vw, 5em);
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 10px 0;       /* Keep margin for spacing */
+}
+
+.album-art {
+    width: 80%; /* Use percentage to scale with screen size */
+    max-width: 500px;
+    border: 5px solid white;
+    margin: 30px auto;
+    display: block;
+}
+
+.release-date {
+    font-size: clamp(0.8rem, 2vw, 1.2em); /* Adaptative fontsize */
+    margin-top: 10px;          /* Increase for better spacing */
+    text-transform: uppercase;
+}
+
+.eye {
+    position: absolute;
+    height: auto; /* Adapt to height with aspect ratio */
+    max-width: 500px; /* Maximum width */
+}
+
+.eye1 {
+    transform: rotate(-15deg);
+    width: 300px;
+    max-width: 50px;
+    top: 20%;
+    left: 5%;      
+}
+
+.eye2 {
+    width: 14%;
+    max-width: 70px;
+    top: 30%;
+    right: 5%;      /* Move closer to the edge */
+    transform: rotate(10deg);
+}
+
+.eye3 {
+    transform: rotate(7deg);
+    width: 6%;
+    max-width: 30px;
+    bottom: 20%;
+    left: 5%;       /* Move closer to the edge */
+}
+
+.eye4 {
+    transform: rotate(-7deg);
+    width: 9%;
+    max-width: 45px;
+    bottom: 30%;
+    right: 5%;      /* Move closer to the edge */
+}
+
+/* Content 2 Styles (Tracklist) */
+.content-2 {
+    color: black;
+    padding: 50px 20px;
+    background-color: white;
+    text-align: left;
+    width: clamp()
+}
+
+.content-2 h2 {
+    font-size: clamp(1em, 4vw, 3em);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.track-list {
+    list-style-type: decimal;
+    padding-left: 30px;
+    width: clamp(200px, 41vw, 800px);
+    margin: 0 auto;
+}
+
+.track-list li {
+    font-size: clamp(0.625em, 1vw, 1.25em);
+    margin-bottom: 10px;
+}
+
+.lyrics {
+    color: #ccc;
+    font-size: 0.9em;
+    font-size: clamp(0.625em, 1vw, 1.25em);
+}
